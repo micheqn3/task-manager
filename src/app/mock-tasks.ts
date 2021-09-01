@@ -1,3 +1,5 @@
+// Array of mock tasks, specified with Task interface 
+
 import { Task } from './Task';
 
 export const TASKS: Task[] = [
