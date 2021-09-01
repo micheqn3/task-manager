@@ -16,6 +16,7 @@ export class ButtonComponent implements OnInit {
 
   constructor() { }
 
+  // Life cycle method that runs when the component loads
   ngOnInit(): void {
   }
 
