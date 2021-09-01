@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Serve only the static files form the dist directory
+// Serve only the static files from the dist directory
 app.use(express.static(__dirname + '/dist/task-manager'));
 
 app.get('/*', function(req,res) {
