@@ -25,6 +25,17 @@ export class TasksComponent implements OnInit {
   // Subscribe to observable to constantly watch it
   // This will set the tasks equal to the task we get back from the observable
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks)
+    this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
   }
+
+  // Fires when a onDeleteTask event is emitted
+  // Calls the service method to delete and filters out the tasks not equal to the one in the param
+  deleteTask(task: Task) {
+    this.taskService
+      .deleteTask(task)
+      .subscribe(
+        () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
+      );
+  }
+
 }

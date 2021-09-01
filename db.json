@@ -1,21 +1,22 @@
-{"tasks": [
+{
+  "tasks": [
     {
-        "id": 1,
-        "text": "Palm Springs",
-        "day": "September 11th at 5:00 Am",
-        "reminder": true
-    },
-
-    {
-        "id": 2,
-        "text": "Doctor's Appointment",
-        "day": "September 1st at 5:00pm",
-        "reminder": true
+      "id": 1,
+      "text": "Grocery Shopping",
+      "day": "September 11th at 5:00 AM",
+      "reminder": true
     },
     {
-        "id": 3,
-        "text": "Brunch",
-        "day": "September 6th at 1:30pm",
-        "reminder": false
+      "id": 2,
+      "text": "Doctor's Appointment",
+      "day": "September 1st at 5:00PM",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Brunch",
+      "day": "September 6th at 1:30PM",
+      "reminder": false
     }
-]}
+  ]
+}
