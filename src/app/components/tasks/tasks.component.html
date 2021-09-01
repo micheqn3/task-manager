@@ -1,2 +1,3 @@
-<p *ngFor="let task of tasks">{{ task.text}}</p> 
+<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+<!-- Looping over tasks using task-item component and passing in task property for that specific iteration -->
 <!--*ngFor is a structural directive that renders a template for each item in a collection -->
