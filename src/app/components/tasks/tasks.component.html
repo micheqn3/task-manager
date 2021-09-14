@@ -1,5 +1,6 @@
 <!-- Looping over tasks using task-item component and passing in task property for that specific iteration -->
 <!--*ngFor is a structural directive that renders a template for each item in a collection -->
 <!-- When onDeleteTask is emitted, we will call deleteTask() -->
-<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)"></app-task-item>
+<!-- When onToggleReminder is emitted, we will call toggleIt() -->
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)" (onToggleReminder)="toggleReminder(task)"></app-task-item>
 

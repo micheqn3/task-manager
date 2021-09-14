@@ -13,6 +13,7 @@ export class TaskItemComponent implements OnInit {
   faTimes = faTimes;
   @Input() task: Task;
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
 
   constructor() { }
 
@@ -24,4 +25,8 @@ export class TaskItemComponent implements OnInit {
     this.onDeleteTask.emit(task);
   }
 
+  // Emit to the parent component that the user double clicked on a task
+  onToggle(task: Task) {
+    this.onToggleReminder.emit(task);
+  }
 }

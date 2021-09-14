@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 // Import our task interface and task service
 import { Task } from '../../Task';
 import { TaskService } from '../../services/task.service';
+import { faTheaterMasks } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -36,6 +37,12 @@ export class TasksComponent implements OnInit {
       .subscribe(
         () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
       );
+  }
+
+  // Fires when a onToggleReminder event is emitted
+  // Sets the task's reminder to the opposite
+  toggleReminder(task: Task) {
+    task.reminder = !task.reminder;
   }
 
 }
