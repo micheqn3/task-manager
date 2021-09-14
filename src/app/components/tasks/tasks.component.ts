@@ -22,7 +22,7 @@ export class TasksComponent implements OnInit {
 
   // Life cycle method that runs when the component loads
   // Will retrieve the tasks from task service
-  // Subscribe to observable to constantly watch it
+  // Subscribe to observable to constantly watch it and get notified of any data emitted
   // This will set the tasks equal to the task we get back from the observable
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
