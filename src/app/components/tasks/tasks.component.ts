@@ -49,7 +49,8 @@ export class TasksComponent implements OnInit {
   // Fires when a onAddTask event is emitted
   // Calls the service method to add task to JSON DB
   addTask(task: Task) {
-    console.log(task);
+    this.taskService.addTask(task).subscribe((task) => {
+      this.tasks.push(task)
+    })
   }
-
 }
