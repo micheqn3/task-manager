@@ -11,6 +11,8 @@ The application allows the user to:
 - Toggle reminders on double click
 - Toggle the form to view or hide
 
+### Installing locally
+
 1. Make sure you have Node.js + Angular CLI to run the application
 2. Clone this repo
 > HTTPS: `https://github.com/micheqn3/task-manager.git` <br>
