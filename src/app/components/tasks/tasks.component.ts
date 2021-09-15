@@ -46,6 +46,8 @@ export class TasksComponent implements OnInit {
     this.taskService.updateTaskReminder(task).subscribe();
   }
 
+  // Fires when a onAddTask event is emitted
+  // Calls the service method to add task to JSON DB
   addTask(task: Task) {
     console.log(task);
   }
