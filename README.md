@@ -8,6 +8,8 @@ The application allows the user to:
 - View their tasks
 - Add a new task
 - Delete a task
+- Toggle reminders on double click
+- Toggle the form to view or hide
 
 1. Make sure you have Node.js + Angular CLI to run the application
 2. Clone this repo
