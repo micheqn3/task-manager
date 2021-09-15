@@ -5,8 +5,6 @@ import { Component, OnInit } from '@angular/core';
 // Import our task interface and task service
 import { Task } from '../../Task';
 import { TaskService } from '../../services/task.service';
-import { faTheaterMasks } from '@fortawesome/free-solid-svg-icons';
-
 
 @Component({
   selector: 'app-tasks',
